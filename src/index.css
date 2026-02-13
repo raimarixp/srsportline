@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f8fafc; /* Fundo Claro (Slate-50) */
+  color: #0f172a;            /* Texto Escuro (Slate-900) */
+  overflow-x: hidden;
+}
+
+/* --- NOVO GLASS (Versão Light) --- */
+.glass {
+  background: rgba(255, 255, 255, 0.7);   /* Branco translúcido */
+  backdrop-filter: blur(12px);            /* Desfoque */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.05);  /* Borda cinza bem sutil */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); /* Sombra suave */
+}
+
+.glass-panel {
+  @apply glass rounded-2xl;
+}
+
+/* Header precisa ser mais sólido para ler em cima de banners */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+/* Texto Gradiente (Sr Sportline) - Mantemos para destacar a marca */
+.text-gradient {
+  background: linear-gradient(to right, #1d4ed8, #0ea5e9); /* Azul Royal para Ciano */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
