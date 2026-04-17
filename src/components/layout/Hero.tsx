@@ -6,7 +6,7 @@ const SLIDES = [
   {
     id: 1,
     // Imagem da Seleção/Torcida (Vibe Brasil)
-    bgImage: 'https://i.ibb.co/39mMn9qj/Design-sem-nome-1.png',
+    bgImage: 'https://res.cloudinary.com/ddqrpidxw/image/upload/v1776387417/peru-brasil-eliminatorias-2022-13102020_15zbu5cfr2zwp1oisdg83uq4t9_pu2sy3.jpg',
     subtitle: 'COLEÇÃO OFICIAL 2026',
     title: 'A AMARELINHA',
     highlight: 'PESA',
@@ -30,7 +30,7 @@ const SLIDES = [
   {
     id: 3,
     // Imagem Estádio (Vibe Clubes)
-    bgImage: 'https://images.unsplash.com/photo-1628891435231-15d2a9d82138?q=80&w=2070&auto=format&fit=crop',
+    bgImage: 'https://res.cloudinary.com/ddqrpidxw/image/upload/v1776387417/Taca-da-Serie-A-do-Campeonato-Brasileiro-de-2026-Foto-Divulgacao-CBF-Rafael-Ribeiro_na7zgn.jpg',
     subtitle: 'TEMPORADA 2024',
     title: 'PAIXÃO',
     highlight: 'NACIONAL',

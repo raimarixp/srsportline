@@ -145,7 +145,7 @@ export const Home = () => {
            
            <Zap className="mx-auto text-brand-blue mb-4 fill-brand-blue/20" size={40} />
            
-           <h2 className="text-3xl font-bold text-slate-900 mb-4">Entre para o Clube SR</h2>
+           <h2 className="text-3xl font-bold text-slate-900 mb-4">Entre para o Clube VX</h2>
            <p className="text-slate-500 max-w-lg mx-auto mb-8">
              Receba ofertas exclusivas, cupons de primeira compra e avisos de drops limitados direto no seu e-mail.
            </p>

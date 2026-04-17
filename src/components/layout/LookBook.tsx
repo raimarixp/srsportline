@@ -1,13 +1,13 @@
 import { Instagram, ArrowRight } from 'lucide-react';
 
 const LOOKS = [
-  "https://i.ibb.co/8DGrsCT9/Save-Clip-App-277243942-2354441294693001-7188785454205562289-n.jpg",
-  "https://i.ibb.co/zWvXCfcW/Save-Clip-App-377942238-280611651440372-4846178121153684607-n.jpg",
-  "https://i.ibb.co/5hfPRvSW/Save-Clip-App-608767834-18523992613069239-7058255806420104862-n.jpg",
-  "https://i.ibb.co/twN1F8dF/Save-Clip-App-608784603-18523992595069239-2028127990901838615-n.jpg",
-  "https://i.ibb.co/k64g6Jnz/Save-Clip-App-451399006-1951456538607974-2188696719384486105-n.jpg",
-  "https://i.ibb.co/YBjwTDqh/Save-Clip-App-607796419-18523992625069239-8176579895523637158-n.jpg",
-  "https://i.ibb.co/67kLpj3d/Save-Clip-App-313028804-422431463416528-194857227793726585-n.jpg"
+  "https://res.cloudinary.com/ddqrpidxw/image/upload/v1776388389/vx_ppyaqo.jpg",
+  "https://res.cloudinary.com/ddqrpidxw/image/upload/v1776388388/vx6_yw0q6b.jpg",
+  "https://res.cloudinary.com/ddqrpidxw/image/upload/v1776388388/vx4_wp82tn.jpg",
+  "https://res.cloudinary.com/ddqrpidxw/image/upload/v1776388388/vx3_ufxq3k.jpg",
+  "https://res.cloudinary.com/ddqrpidxw/image/upload/v1776388388/vx5_t1ddns.jpg",
+  "https://res.cloudinary.com/ddqrpidxw/image/upload/v1776388388/vx7_bmqvxt.jpg",
+  "https://res.cloudinary.com/ddqrpidxw/image/upload/v1776388388/vx2_dbdqy1.jpg"
 ];
 
 export const Lookbook = () => {
@@ -19,7 +19,7 @@ export const Lookbook = () => {
       <div className="max-w-7xl mx-auto px-6 mb-12 flex flex-col md:flex-row justify-between items-end gap-6">
         <div>
           <span className="text-brand-blue font-bold tracking-widest text-xs uppercase mb-2 block">
-            #SRSPORTLINE
+            #VORTEXSPORTS
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter">
             LOOKBOOK <span className="text-slate-400 italic">2026</span>
@@ -94,7 +94,7 @@ const LookbookCard = ({ img }: { img: string, index: number }) => (
     </div>
 
     <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur px-2 py-1 rounded text-[10px] font-bold text-slate-900 shadow-sm">
-        @SRSPORTLINE
+        @VORTEXSPORTS
     </div>
   </div>
 );

@@ -40,7 +40,7 @@ export const Footer = () => {
           {/* Coluna 1: Marca */}
           <div className="space-y-4">
             <h2 className="text-2xl font-black italic text-white flex gap-1">
-              SR <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-red">SPORTLINE</span>
+              VX <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-red">SPORTLINE</span>
             </h2>
             <p className="text-sm leading-relaxed">
               Especialistas em artigos esportivos importados. Trazendo a elite do basquete e do futebol mundial para o seu jogo.
@@ -81,7 +81,7 @@ export const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-brand-blue" />
-                suporte@srsportline.com
+                suporte@vortexsports.com
               </li>
               <li className="text-xs text-gray-500">
                 Seg a Sex: 09h às 18h<br />
@@ -93,7 +93,7 @@ export const Footer = () => {
 
         {/* 3. RODAPÉ FINAL */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
-          <p>© 2024 SR Sportline. Todos os direitos reservados.</p>
+          <p>© 2024 Vortex sports. Todos os direitos reservados.</p>
           <div className="flex gap-4">
              {/* Simulação de ícones de pagamento */}
              <div className="h-6 w-10 bg-white/10 rounded"></div>

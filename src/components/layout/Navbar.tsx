@@ -21,20 +21,25 @@ export const Navbar = () => {
   // Cores dinâmicas baseadas no scroll
   const navBg = scrolled ? 'bg-white/90 backdrop-blur-md shadow-lg border-b border-slate-100' : 'bg-transparent';
   const textColor = scrolled ? 'text-slate-900' : 'text-white';
-  const logoColor = scrolled ? 'text-slate-900' : 'text-white drop-shadow-md';
   const iconHover = scrolled ? 'hover:text-brand-blue' : 'hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]';
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${navBg} py-4`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
-        {/* LOGO (Com contraste ajustado) */}
-        <Link to="/" className="text-2xl font-black tracking-tighter italic flex items-center gap-1 group">
-          {/* SR agora muda de cor e tem sombra no modo transparente */}
-          <span className={`${logoColor} transition-colors duration-300`}>SR</span>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-cyan-400 font-extrabold filter drop-shadow-sm">
-            SPORTLINE
-          </span>
+        {/* LOGO (Com imagem da Cloudinary) */}
+        <Link to="/" className="flex items-center group transition-transform duration-300 hover:scale-105">
+          <img 
+            src="https://res.cloudinary.com/ddqrpidxw/image/upload/v1776387417/VORTEX_BRANCO_ksnpim.png" 
+            alt="Vortex Sports" 
+            className={`
+              h-8 md:h-10 w-auto transition-all duration-300
+              ${scrolled 
+                ? 'filter invert brightness-0' // Fica preta quando a barra fica branca
+                : 'drop-shadow-[0_2px_10px_rgba(255,255,255,0.3)]' // Brilha quando a barra é transparente
+              }
+            `}
+          />
         </Link>
 
         {/* MENU DESKTOP */}
