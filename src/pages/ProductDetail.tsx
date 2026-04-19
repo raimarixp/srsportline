@@ -186,7 +186,7 @@ export const ProductDetail = () => {
                )}
             </div>
 
-            {/* BOTÃO COMPRAR / ADICIONAR */}
+           {/* BOTÃO COMPRAR / ADICIONAR */}
             <div className="space-y-3">
                 <button 
                   onClick={handleAddToCart}
@@ -196,7 +196,8 @@ export const ProductDetail = () => {
                     ${selectedVariant 
                       ? isAdding 
                           ? 'bg-green-600 text-white scale-[0.98]'
-                          : 'bg-brand-blue text-white hover:bg-blue-700 hover:-translate-y-1 shadow-xl hover:shadow-2xl hover:shadow-blue-900/20' 
+                          // 👇 MUDANÇA AQUI: Trocamos bg-brand-blue por bg-slate-900 (Preto elegante)
+                          : 'bg-slate-900 text-white hover:bg-black hover:-translate-y-1 shadow-xl hover:shadow-2xl' 
                       : 'bg-slate-200 text-slate-400 cursor-not-allowed'
                     }
                   `}
@@ -207,9 +208,6 @@ export const ProductDetail = () => {
                       <><ShoppingCart size={22} /> {selectedVariant ? 'ADICIONAR À SACOLA' : 'SELECIONE UM TAMANHO'}</>
                   )}
                 </button>
-                
-                {/* Botão Secundário: Compra Rápida (Opcional, levaria direto pro checkout) */}
-                {/* <button className="...">Comprar Agora</button> */}
             </div>
 
             {/* BENEFÍCIOS (ÍCONES) */}
